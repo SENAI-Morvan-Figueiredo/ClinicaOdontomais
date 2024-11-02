@@ -1,0 +1,6 @@
+h1{
+font-family: "poppins", sans-serif;
+background: linear-gradient(#3A8EF6, #6F3AFA);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
