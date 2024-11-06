@@ -9,6 +9,32 @@
 
 html {
   box-sizing: border-box;
+  font-size: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(to right bottom, #3A8EF6, #6F3AFA);
+  color: white;
+  text-decoration: none;
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.5);
+}
+.btn--small {
+  font-size: 0.5rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.5rem;
+}
+.btn--big {
+  font-size: 1rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.5rem;
+}
+.btn:active {
+  color: black;
+}
+
+.input {
+  border: 1px solid gray;
 }
 
 .fonte-media {

@@ -1,0 +1,28 @@
+.btn{
+      display: inline-block;
+      background: linear-gradient(to right bottom,#3A8EF6, #6F3AFA);
+      color: white;
+      text-decoration: none;
+      box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.5);
+      &--small{
+            font-size: $font-size--small;
+            padding:0.1rem 0.3rem;
+            border-radius: 0.5rem;
+      }
+      &--big{
+            font-size: $font-size--medium;
+            padding:0.3rem 0.7rem;
+            border-radius: 0.5rem;
+      }
+      &:active{
+            color: black;
+      }
+}
+
+.input{
+      border: 1px solid gray;
+}
+
+
+
+
