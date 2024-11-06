@@ -1,28 +1,97 @@
-.btn{
-      display: inline-block;
-      background: linear-gradient(to right bottom,#3A8EF6, #6F3AFA);
-      color: white;
-      text-decoration: none;
-      box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.5);
-      &--small{
-            font-size: $font-size--small;
-            padding:0.1rem 0.3rem;
-            border-radius: 0.5rem;
-      }
-      &--big{
-            font-size: $font-size--medium;
-            padding:0.3rem 0.7rem;
-            border-radius: 0.5rem;
-      }
-      &:active{
-            color: black;
-      }
+.btn {
+  display: inline-block;
+  background: linear-gradient(
+    to right bottom,
+    $primary-color--light,
+    $primary-color--dark
+  );
+  color: white;
+  text-decoration: none;
+  box-shadow: 3px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  &--smallest {
+    font-size: $font-size--smallest;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.3rem;
+  }
+  &--small {
+    font-size: $font-size--small;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.3rem;
+  }
+  &--normal {
+    font-size: $font-size--normal;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+  &--big {
+    font-size: $font-size--big;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+  &--biggest {
+    font-size: $font-size--biggest;
+    padding: 0.1rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+  &:hover,
+  :active {
+    background: linear-gradient(
+      to right bottom,
+      lighten($primary-color--light, 5%),
+      lighten($primary-color--dark, 5%)
+    );
+    transition: all 0.15s;
+  }
+  &:active {
+    transform: scale(0.98);
+    box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
+  }
 }
 
-.input{
-      border: 1px solid gray;
+.input {
+  font-size: $font-size--normal;
+  padding: 0.8rem 2rem;
+  border: $color-gray 2px solid;
+  border-radius: 0.5rem;
+  &::placeholder {
+    color: $color-gray;
+    opacity: 0.7;
+  }
+  &--invalid,
+  :invalid {
+    border-color: $color-invalid;
+  }
+  &--valid,
+  :valid {
+    border-color: $color-valid;
+  }
+  &--focus,
+  &:focus {
+    border-color: $color-focus;
+  }
 }
 
+.container__frame {
+  background-color: $color-ice-white;
+  border-radius: 2rem;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
+}
+.header__frame {
+  background-color: $color-ice-white;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
+  position: sticky;
+}
 
-
-
+.titulo__frame {
+  font-size: $font-size--biggest;
+  font-weight: 900;
+  background: linear-gradient(
+    to right bottom,
+    $primary-color--light,
+    $primary-color--dark
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: auto;
+}
