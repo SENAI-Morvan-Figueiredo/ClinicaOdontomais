@@ -74,6 +74,8 @@
 .container__frame {
   background-color: $color-ice-white;
   border-radius: 2rem;
+  min-height: 20rem;
+  margin: 5rem 5rem;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
 }
 .header__frame {
@@ -94,4 +96,9 @@
   -webkit-background-clip: text;
   color: transparent;
   margin: auto;
+}
+
+.horizontal-form{
+  display: flex;
+  flex-direction: row;
 }

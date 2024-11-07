@@ -1,6 +1,22 @@
-.consultas-agendadas__container{
-  display: grid;
-  grid-template-columns: [inicio] minmax(3rem, 1fr) [inicio-fim inicio-repeat] repeat(10,[col-start] 1fr [col-end]) [fim-inicio] minmax(3rem, 1fr) [fim];
-  grid-template-rows: repeat(2,[row-start]3rem[row-end]);
-  background-color: #ff000030;
-}
+// .consultas-agendadas__container {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: end;
+//   background-color: #ff000030;
+// }
+
+// .consultas-agendadas__header {
+//   background-color: greenyellow;
+
+
+// }
+// .consultas-agendadas__main{
+//   background-color: blueviolet;
+
+// }
+
+// .consultas-agendadas__footer{
+// background-color: aquamarine;
+// flex-grow: 15rem;
+// }
