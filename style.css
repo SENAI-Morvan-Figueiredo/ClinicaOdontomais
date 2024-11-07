@@ -316,20 +316,26 @@ nav {
     flex-direction: column;
     justify-items: center;
     margin-left: 21rem;
+    pointer-events: painted;
 }
 
 .entrar_criar{
     background: linear-gradient(90deg, #3A8EF6, #6F3AFA);
-    border: solid 0.5px; 
+    border: none; 
     border-radius: 1rem; 
     width: 35rem;
     height: 3rem;
-    font-family: "Sora", sans-serif;
-    color: white;
     margin-top: 1rem;
+    color: white;
+    font-family: "Sora", sans-serif;
 }
 
 .entrar_criar:hover {
     transform: translateY(-3px);
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.entrar_criar a {
+    text-decoration: none;
+    
 }
