@@ -1,0 +1,23 @@
+.input-group {
+  position: relative;
+}
+
+.input-icone {
+  padding-right: 4rem;
+}
+
+.icon {
+  position: absolute;
+  font-size: $font-size--biggest;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  &--light{
+    color: $primary-color--light;
+  }
+  &--white{
+    color: $color-ice-white;
+  }
+}

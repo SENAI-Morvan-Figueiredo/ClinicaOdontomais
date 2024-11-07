@@ -5,7 +5,8 @@ $color-invalid: #f29092;
 $color-valid: #67d565;
 $color-focus: #93b4ff;
 $color-gray: grey;
-$color-ice-white: #FFFDFC;
+$color-ice-white: #fffdfc;
+
 
 //FONTES
 $font-size--smallest: 0.7rem;
@@ -13,3 +14,14 @@ $font-size--small: 1rem;
 $font-size--normal: 1.6rem;
 $font-size--big: 2rem;
 $font-size--biggest: 2.5rem;
+
+
+
+
+//MIXINS
+@mixin color-gradiant{ 
+  background-color: linear-gradient(
+  to right,
+  $primary-color--light,
+  $primary-color--dark
+)};

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de teste de componentes</title>
+    <link href="css/estilo.css" rel="stylesheet" />
+  </head>
+
+  <body style="padding: 20rem">
+    <div class="header__frame" style="width: 80vw; height: 10vh"></div>
+    <div>
+      <span>TEXTO PADRÃO</span>
+    </div>
+    <div>
+      <a class="btn btn--smallest" href="#">botão(link) SMALLEST</a>
+      <a class="btn btn--small" href="#">botão(link) SMALL</a>
+      <a class="btn btn--normal" href="#">botão(link) NORMAL</a>
+      <a class="btn btn--big" href="#">botão(link) BIG</a>
+      <a class="btn btn--biggest" href="#">botão(link) BIGGEST</a>
+    </div>
+
+    <div class="container__frame" style="max-width: 20vw; min-height: 30vh">
+      <div
+        style="display: flex; flex-direction: column; gap: 1rem; padding: 3rem"
+      >
+        <span class="titulo__frame">Titulo FRAME</span>
+        <input class="input" placeholder="Teste de input" />
+        <input class="input input--invalid" placeholder="Invalido" />
+        <input class="input input--valid" placeholder="Válido" />
+        <input class="input input--focus" placeholder="Focus" />
+      </div>
+
+      <div class="input-group">
+            <input type="text" placeholder="Digite o nome do perfil" class="input input-icone">
+            <i class="fas fa-save icon"></i>
+          </div>
+    </div>
+  </body>
+</html>

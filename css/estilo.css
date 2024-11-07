@@ -1,12 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap");
-
-u-flex-self-center {
+.u-flex-self-center {
   align-self: center;
 }
 
-u-flex-column {
+.u-flex-column {
   display: flex;
   flex-direction: column;
 }
@@ -76,6 +75,7 @@ body {
   padding: 0.8rem 2rem;
   border: grey 2px solid;
   border-radius: 0.5rem;
+  width: 100%;
 }
 .input::placeholder {
   color: grey;
@@ -93,16 +93,30 @@ body {
   border-color: #93b4ff;
 }
 
+.input-fake {
+  position: relative;
+  font-size: 1.6rem;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  color: white;
+  background-color: linear-gradient(to right, #3a8ef6, #6f3afa);
+}
+.input-fake .icon {
+  color: white;
+}
+
 .container__frame {
-  background-color: #FFFDFC;
+  background-color: #fffdfc;
   border-radius: 2rem;
   min-height: 20rem;
   margin: 5rem 5rem;
+  padding: 5rem 10rem;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 .header__frame {
-  background-color: #FFFDFC;
+  background-color: #fffdfc;
   border-radius: 0 0 2rem 2rem;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.2);
   position: sticky;
@@ -111,10 +125,11 @@ body {
 .titulo__frame {
   font-size: 2.5rem;
   font-weight: 900;
-  background: linear-gradient(to right bottom, #3a8ef6, #6f3afa);
+  background: linear-gradient(to right, #3a8ef6, #6f3afa);
   -webkit-background-clip: text;
   color: transparent;
-  margin: auto;
+  margin: 0 auto 2rem auto;
+  font-family: "Poppins", sans-serif;
 }
 
 .horizontal-form {
@@ -122,65 +137,91 @@ body {
   flex-direction: row;
 }
 
-header {
-  background-color: #FFFDFC;
+.input-group {
+  position: relative;
+}
+
+.input-icone {
+  padding-right: 4rem;
+}
+
+.icon {
+  position: absolute;
+  font-size: 2.5rem;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.icon--light {
+  color: #3a8ef6;
+}
+.icon--white {
+  color: #fffdfc;
+}
+
+.header {
+  background-color: #fffdfc;
+  display: flex;
   width: 100vw;
   height: 6rem;
+  padding: 0 10rem;
   border-bottom-left-radius: 2.2rem;
   border-bottom-right-radius: 2.2rem;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1rem 0 1rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* Corpo-da-página */
 }
-
-nav {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.logo {
+.header__logo {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 3rem;
-  background: linear-gradient(50deg, #3A8EF6, #6F3AFA);
+  font-size: 2.5rem;
+  background: linear-gradient(50deg, #3a8ef6, #6f3afa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.navbar {
+.header__nav {
+  display: flex;
+  gap: 3rem;
+}
+.header__nav-item {
   color: rgb(112, 107, 107);
   font-family: "Sora", sans-serif;
+  text-decoration: none;
 }
-
-#perfil img {
-  border-radius: 50%;
-  width: 2rem;
-  height: 2rem;
-  margin-left: 0.5em;
+.header__nav-item--selected {
+  color: #3a8ef6;
+  border-bottom: 3px solid #3a8ef6;
 }
-
-#perfil {
-  background: linear-gradient(90deg, #3A8EF6, #6F3AFA);
-  border-radius: 2rem;
-  width: 12rem;
-  height: 3rem;
+.header__nav-item:hover {
+  color: #3a8ef6;
+}
+.header__profile-container {
+  border-radius: 3rem;
+  width: 20rem;
+  height: 80%;
   display: flex;
   align-items: center;
-  color: white;
+  justify-content: space-evenly;
+  color: #fffdfc;
+  background: linear-gradient(90deg, #3a8ef6, #6f3afa);
 }
-
-#nome {
-  margin-left: 0.5em;
+.header__profile-img {
+  border-radius: 50%;
+  width: 4rem;
+  margin-left: -1rem;
+}
+.header__profile-name-container {
   display: flex;
   flex-direction: column;
   font-family: "Sora", sans-serif;
 }
-
-/* Corpo-da-página */
-.container {
-  background-color: #FFFDFC;
+.header__profile-name-role {
+  font-size: 1rem;
+}
+.header .container {
+  background-color: #fffdfc;
   border-radius: 2rem;
   min-height: 20em;
   margin: 5rem;
