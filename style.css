@@ -297,7 +297,7 @@ nav {
 
 #esqueceu_a_senha{
     display: flex;
-    margin-left: 21.1rem;
+    margin-left: 31rem;
     margin-top: 1rem;
     font-size: 0.8rem;
     font-weight: 500;
@@ -315,7 +315,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    margin-left: 21rem;
+    margin-left: 30.1rem;
     pointer-events: painted;
 }
 
@@ -325,7 +325,7 @@ nav {
     border-radius: 1rem; 
     width: 35rem;
     height: 3rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     color: white;
     font-family: "Sora", sans-serif;
 }
