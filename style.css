@@ -67,7 +67,7 @@ nav {
 
 }
 
-/* Corpo-da-página */
+/* Corpo-da-página agenda*/
 
 .container {
     background-color: #FFFDFC;
@@ -114,7 +114,34 @@ nav {
     height: 3rem;
 }
 
+/* BOTÃO DE SALVAR DA PAGINA ENTRAR */
 
+.botao_salvar{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    pointer-events: painted;
+}
+
+.entrar_criar{
+    background: linear-gradient(90deg, #3A8EF6, #6F3AFA);
+    border: none; 
+    border-radius: 1rem; 
+    width: 35rem;
+    height: 3rem;
+    margin-top: 2rem;
+    color: white;
+    font-family: "Sora", sans-serif;
+}
+
+.entrar_criar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.entrar_criar a {
+    text-decoration: none;
+}
 /* PRONTUARIO */
 
 /* CORPO DO PRONTUARIO */
@@ -297,7 +324,7 @@ nav {
 
 #esqueceu_a_senha{
     display: flex;
-    margin-left: 31rem;
+    
     margin-top: 1rem;
     font-size: 0.8rem;
     font-weight: 500;
@@ -315,7 +342,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    margin-left: 30.1rem;
+    
     pointer-events: painted;
 }
 
@@ -325,7 +352,7 @@ nav {
     border-radius: 1rem; 
     width: 35rem;
     height: 3rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     color: white;
     font-family: "Sora", sans-serif;
 }
@@ -337,5 +364,5 @@ nav {
 
 .entrar_criar a {
     text-decoration: none;
-    
 }
+
