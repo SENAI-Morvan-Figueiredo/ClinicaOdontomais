@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="PT">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,19 @@
     <title>Prontuário</title>
 
 </head>
+
 <body>
     <!-- Cabeçalho -->
     <header>
         <div id="logo">
-           <a href="index.html">Odonto+</a> 
+            <a href="index.html">Odonto+</a>
         </div>
         <nav>
-            <a class="navbar" href="">Dashboard</a>
-            <a class="navbar" href="">Dashboard</a>
-            <a class="navbar" href="">Dashboard</a>
-            <a class="navbar" href="">Dashboard</a>
-        </nav>   
+            <a class="navbar" href="">Agenda</a>
+            <a class="navbar" href="">Nova consulta</a>
+            <a class="navbar" href="">Prontuário</a>
+            <a class="navbar" href="">Novo cadastro</a>
+        </nav>
         <div id="perfil">
             <img src="./imagens/icone_perfil.png" alt="imagem pessoal">
             <div id="nome">
@@ -26,19 +28,45 @@
                 <h6>Administrador</h6>
             </div>
         </div>
-    </header> 
+    </header>
 
     <!-- Corpo da página -->
 
     <div class="container_prontuario">
         <h2>Prontuário odontológico</h2>
-            <div class="iniciar_consulta">
-                <div class="foto_perfil">
-                    <img src="./imagens/icone_perfil.png" alt="Foto do perfil">
+        <div class="iniciar_consulta">
+            <div class="foto_perfil">
+                <img src="./imagens/icone_perfil.png" alt="Foto do perfil">
+                <div class="itens-prontuario">
                     <button class="botao_iniciar_consulta"> Iniciar consulta</button>
+                    <div class="barra_de_dados">
+                        <p>Gustavo Santos</p>
+                        <p>12/12/2024</p>
+                        <p>444.444.444-44</p>
+                    </div>
                 </div>
-            </div>   
+            </div>
+        </div>
+
+        <!-- BARRA DE OPÇOES DE ESCOLHAS -->
+        <div class="opcoes_descricao">
+            <div class="barra_opcoes">
+                <button class="botao_opcoes">Exames</button>
+                <button class="botao_opcoes">Atestados</button>
+                <button class="botao_opcoes">Agendamentos</button>
+            </div>
+            <div class="descricao">
+                <textarea name="descricao_consulta" placeholder="Descrição da consulta:">
+                
+
+            </div>
+        </div>
     </div>
-    
+
+
+
+
+
 </body>
+
 </html>
