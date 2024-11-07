@@ -4,7 +4,7 @@
   "description": "Automação no grenciamento de consultas",
   "main": "index.html",
   "scripts": {
-    "watch-sass": "sass sass/main.scss css/estilo.css -w",
+    "watch-sass": "sass sass/_main.scss css/estilo.css -w",
     "dev-server": "live-server",
     "start": "npm-run-all --parallel dev-server watch-sass"
   },
