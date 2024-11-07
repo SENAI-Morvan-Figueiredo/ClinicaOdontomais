@@ -264,3 +264,70 @@ nav {
     font-family: "Sora", sans-serif;
     color: gray;
 }
+
+/* PÁGINA DE LOGIN */
+
+#logo_pagina_login {
+    font-family: "Poppins", sans-serif;
+    font-weight: 550;
+    font-size: 2rem;
+    background: linear-gradient(50deg, #3A8EF6, #6F3AFA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+
+}
+
+.subtitulo_login{
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 2.1rem ;
+    background: linear-gradient(50deg, #3A8EF6, #6F3AFA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#esqueceu_a_senha{
+    display: flex;
+    margin-left: 21.1rem;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  
+}
+
+#esqueceu_a_senha a{
+    background: linear-gradient(10deg, #3A8EF6, #6F3AFA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.botao_entrar{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-left: 21rem;
+}
+
+.entrar_criar{
+    background: linear-gradient(90deg, #3A8EF6, #6F3AFA);
+    border: solid 0.5px; 
+    border-radius: 1rem; 
+    width: 35rem;
+    height: 3rem;
+    font-family: "Sora", sans-serif;
+    color: white;
+    margin-top: 1rem;
+}
+
+.entrar_criar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
