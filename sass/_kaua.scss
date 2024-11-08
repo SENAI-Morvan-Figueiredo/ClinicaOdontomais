@@ -29,7 +29,7 @@
     gap: 3rem;
 
     &-item {
-      color: rgb(112, 107, 107);
+      color: $color-gray;
       font-family: "Sora", sans-serif;
       text-decoration: none;
       &--selected {
