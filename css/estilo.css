@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   height: 100vh;
 }
 
@@ -724,6 +724,73 @@ nav {
 
 .entrar_criar a {
   text-decoration: none;
+}
+
+section {
+  display: flex;
+}
+
+.container {
+  background-color: #FFFDFC;
+  border-radius: 2rem;
+  width: 60%;
+  height: 100vh;
+  margin: 2em 60px 0 60px;
+  box-shadow: 0 5px 15px rgb(20, 20, 20);
+}
+
+.container {
+  background-color: #FFFDFC;
+  border-radius: 2rem;
+  width: 90%;
+  height: 100vh;
+  margin: 2em 60px 0 60px;
+  box-shadow: 0 5px 15px rgb(20, 20, 20);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 60px;
+}
+
+h2 {
+  font-size: 32px;
+  overflow-y: hidden;
+}
+
+.filtros {
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 0 0 120px;
+  background-color: transparent;
+  border: 2px solid #6F3AFA;
+  border-radius: 5px;
+}
+
+.paciente {
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 20px;
+  background-color: #585CF7;
+  font-family: "Sora", sans-serif;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+}
+
+.paciente img {
+  width: 30px;
+  height: 30px;
+  border-radius: 1pc;
+}
+
+.lista {
+  width: 100%;
 }
 
 .header {
