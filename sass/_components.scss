@@ -118,3 +118,21 @@
   display: flex;
   flex-direction: row;
 }
+
+// Aqui é o container azul na lista de especialidades,perfis,etc
+.item-list{
+  background: linear-gradient(90deg, #3A8EF6, #6F3AFA);
+  width: 50rem;
+  height: 3.6rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  label{
+    color: white;
+  }
+  i{
+    color: $color-ice-white;
+  }
+}
