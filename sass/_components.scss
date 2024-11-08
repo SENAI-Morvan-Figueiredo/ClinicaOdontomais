@@ -118,3 +118,13 @@
   display: flex;
   flex-direction: row;
 }
+
+.subtitulo{
+    text-align: center;
+    font-family: "Poppins", sans-serif ;
+    font-weight: 600;
+    font-size: 2rem;
+    background: linear-gradient(50deg, #3A8EF6, #6F3AFA); 
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent; 
+}
