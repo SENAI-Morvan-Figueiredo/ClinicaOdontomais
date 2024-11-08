@@ -1,65 +1,54 @@
 <!DOCTYPE html>
-<html lang="PT">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
-    <title>Prontuário</title>
-
-</head>
-
-<body>
-    <!-- Cabeçalho -->
-    <header>
-        <div id="logo">
-            <a href="index.html">Odonto+</a>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odonto +</title>
+    <link href="css/estilo.css" rel="stylesheet" />
+  </head>
+  <body class="">
+    <header class="header">
+      <a class="header__logo" href="#">Odonto+</a>
+      <nav class="header__nav">
+        <a class="header__nav-item header__nav-item--selected" href="">Home</a>
+        <a class="header__nav-item" href="">Clínicas</a>
+        <a class="header__nav-item" href="">Tratamentos</a>
+        <a class="header__nav-item" href="">Agendamento</a>
+        <a class="header__nav-item" href="">Admin<span> *</span></a>
+      </nav>
+      <div class="header__profile-container">
+        <img
+          class="header__profile-img"
+          src="./img/avatar.jpg"
+          alt="imagem pessoal"
+        />
+        <div class="header__profile-name-container">
+          <span class="header__profile-name">Gustavo Santos</span>
+          <span class="header__profile-name-role">Administrador</span>
         </div>
-        <nav>
-            <a class="navbar" href="">Agenda</a>
-            <a class="navbar" href="/agendar.html">Nova consulta</a>
-            <a class="navbar" href="/prontuario.html">Prontuário</a>
-            <a class="navbar" href="">Novo cadastro</a>
-        </nav>
-        <div id="perfil">
-            <img src="./imagens/icone_perfil.png" alt="imagem pessoal">
-            <div id="nome">
-                <h5>Gustavo Santos</h5>
-                <h6>Administrador</h6>
-            </div>
-        </div>
+      </div>
     </header>
-
-    <!-- Corpo da página -->
-
-    <div class="container_prontuario">
-        <h2>Prontuário odontológico</h2>
-        <div class="iniciar_consulta">
-            <div class="foto_perfil">
-                <img src="./imagens/icone_perfil.png" alt="Foto do perfil">
-                <div class="itens-prontuario">
-                    <button class="botao_iniciar_consulta"> Iniciar consulta</button>
-                    <div class="barra_de_dados">
-                        <p>Gustavo Santos</p>
-                        <p>12/12/2024</p>
-                        <p>444.444.444-44</p>
-                    </div>
-                </div>
-            </div>
+    <div class="container__frame u-flex-column">
+      <h2 class="titulo__frame u-flex-self-center">Prontuário</h2>
+      <div class="prontuario">
+        <div class="prontuario__superior">
+          <div class="prontuario__image">imagem</div>
+          <div class="prontuario__cabecalho">
+            <a class="prontuario__iniciar"> INICIAR CONSULTA</a>
+            <div class="prontuario__info">INFORMAÇÃO PACIENTE</div>
+          </div>
         </div>
-
-        <!-- BARRA DE OPÇOES DE ESCOLHAS -->
-        <div class="opcoes_descricao">
-            <div class="barra_opcoes">
-                <button class="botao_opcoes">Exames</button>
-                <button class="botao_opcoes">Atestados</button>
-                <button class="botao_opcoes">Agendamentos</button>
-            </div>
-            <div class="descricao">
-                <textarea name="descricao_consulta" placeholder="Descrição da consulta:">
-            </div>
+        <div class="prontuario__inferior">
+          <div class="prontuario__nav-container">
+            <div class="prontuario__nav-item">ITEM 1</div>
+            <div class="prontuario__nav-item">ITEM 2</div>
+            <div class="prontuario__nav-item">ITEM 3</div>
+          </div>
+          <div class="prontuario__observacoes">
+            OBSERVAÇÕES
+          </div>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
