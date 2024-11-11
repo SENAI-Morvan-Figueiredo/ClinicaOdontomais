@@ -1,0 +1,220 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem ;
+    font-family: 'Sora',  sans-serif;
+    height: 5.5rem;
+}
+
+nav img {
+    width: 9rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    gap: 2rem;
+    color: #899FBF;
+    font-size: 1rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #899FBF;
+}
+
+nav button {
+    height: 2.5rem;
+    width: 5rem;
+    font-size: 1rem;
+    border-radius: 100px;
+    background: linear-gradient(to right, #3A8EF6, #6F3AFA);
+    color: #FFFF;
+}
+
+.part-1 {
+    width: auto;
+    height: 550px;
+    background-image: url(/img/cadeira1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-txt{
+    width: 760px;
+    height: 390px;
+    border-radius: 60px;
+    background-color: #E6F0F7;
+    opacity: 0.9;
+    position: inherit;
+    float: right;
+    margin: 5rem 40px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txthp{
+    margin-top: -40px;
+}
+
+.box-txt h1{
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.txthp p{
+    margin-top: 30px;
+    font-size: 18px;
+    color: #6c87ae;
+}
+
+.gradiente{
+    background-image: linear-gradient(to right, #3A8EF6, #6F3AFA); /* Definindo o gradiente */
+    -webkit-background-clip: text; /* Aplica o gradiente ao texto */
+    color: transparent; /* Torna o fundo do texto transparente */
+}
+
+.botao {
+    font-weight: bold;
+    text-align: center;
+    border-radius: 25px; /* Bordas arredondadas */
+    background-image: linear-gradient(to right, #3A8EF6, #6F3AFA); /* Gradiente de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.35); /* Sombra do texto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves para interação */
+}
+
+.botao:hover {
+    transform: translateY(-3px); /* Eleva o botão ao passar o mouse */
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); /* Sombra mais intensa no hover */
+}
+
+.txthp button{
+    font-size: 1rem;
+    width: calc(40% + 1rem);
+    height: 2.7rem;
+    margin-top: 60px;
+
+}
+
+.part-2{
+    margin: 0 200px 0 200px;
+}
+
+.part-2 .convenios .cima{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    color: #899FBF;
+}
+
+.part-2 .convenios .cima hr{
+    border: none;
+    height: 2px;
+    background-color: #899FBF;
+    width: 20rem;
+}
+
+.part-2 .convenios .imgs-con {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
+}
+
+.part-2 .convenios .imgs-con img{
+    width: 160px;
+    height: auto;
+}
+
+.part-2 .convenios .baixo {
+    display: flex;
+    justify-content: center;
+}
+
+.part-2 .convenios .baixo hr{
+    border: none;
+    height: 2px;
+    background-color: #899FBF;
+    width: 100%;
+}
+
+.part-2 .info-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.info-1 .direita img{
+    width: 500px;
+    border-radius: 20px;
+}
+
+.info-1 .esquerda h2{
+    font-size: 32px;
+}
+
+.info-1 .esquerda p{
+    margin-top: 20px;
+}
+
+.part-2 .info-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.info-2 .esquerda img{
+    width: 500px;
+    height: 340px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.info-2 .direita h2{
+    font-size: 32px;
+}
+
+.info-2 .direita p{
+    margin-top: 20px;
+}
+
+.part-2 .info-3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.info-3 .direita img{
+    width: 500px;
+    border-radius: 20px;
+}
+
+.info-3 .esquerda h2{
+    font-size: 32px;
+}
+
+.info-3 .esquerda p{
+    margin-top: 20px;
+}

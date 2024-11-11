@@ -2,6 +2,32 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+a :hover {
+  cursor: pointer;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  font-size: 1.6rem;
+  height: 100vh;
+}
+
 /*UTILITARIOS*/
 .u-flex-self-center {
   align-self: center;
@@ -48,32 +74,6 @@
 
 .u-grid-list-size--normal {
   width: 40%;
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-a {
-  text-decoration: none;
-}
-a :hover {
-  cursor: pointer;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Sora", sans-serif;
-  font-size: 1.6rem;
-  height: 100vh;
 }
 
 .btn {
@@ -493,30 +493,344 @@ nav button {
   margin-right: 0.5rem;
 }
 
-.prontuario {
+/*PÁGINA DE PRONTUÁRIO - LISTA*/
+/* CABEÇALHO */
+header {
+  background-color: #FFFDFC;
+  width: 100vw;
+  height: 6rem;
+  border-bottom-left-radius: 2.2rem;
+  border-bottom-right-radius: 2.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem 0 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+#logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  background: linear-gradient(50deg, #3A8EF6, #6F3AFA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar {
+  color: rgb(112, 107, 107);
+  font-family: "Sora", sans-serif;
+}
+
+#perfil img {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.5em;
+}
+
+#perfil {
+  background: linear-gradient(90deg, #3A8EF6, #6F3AFA);
+  border-radius: 2rem;
+  width: 12rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+#nome {
+  margin-left: 0.5em;
   display: flex;
   flex-direction: column;
-  min-height: 70%;
-  min-width: 100%;
+  font-family: "Sora", sans-serif;
 }
-.prontuario__superior {
+
+/* Corpo-da-página agenda*/
+.container {
+  background-color: #FFFDFC;
+  border-radius: 2rem;
+  width: 80vw;
+  padding-bottom: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 5px 15px rgb(20, 20, 20);
   display: flex;
-  min-height: 30%;
-  min-width: 100%;
-  background-color: blanchedalmond;
+  justify-content: center;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: flex-start;
+  align-items: center;
 }
-.prontuario__inferior {
+
+.container h2 {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(90deg, #3A8EF6, #6F3AFA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+/* INPUTS */
+.box_text {
   display: flex;
-  min-height: 60%;
-  min-width: 100%;
-  background-color: brown;
+  flex-direction: column;
 }
-.prontuario__image {
-  flex-grow: 1;
+
+.box-text1 {
+  background: #FFFDFC;
+  border: solid 0.2px rgb(205, 204, 204);
+  box-shadow: 0 5px 15px rgba(0, 0, 30, 0.2);
+  margin-top: 2rem;
+  padding-left: 1rem;
+  width: 35rem;
+  height: 3rem;
 }
-.prontuario__cabecalho {
-  flex-grow: 9;
+
+/* BOTÃO DE SALVAR DA PAGINA ENTRAR */
+.botao_salvar {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  pointer-events: painted;
 }
+
+.entrar_criar {
+  background: linear-gradient(90deg, #3A8EF6, #6F3AFA);
+  border: none;
+  border-radius: 1rem;
+  width: 35rem;
+  height: 3rem;
+  margin-top: 2rem;
+  color: white;
+  font-family: "Sora", sans-serif;
+}
+
+.entrar_criar:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.entrar_criar a {
+  text-decoration: none;
+}
+
+/* PRONTUARIO */
+/* CORPO DO PRONTUARIO */
+.container_prontuario {
+  background-color: #FFFDFC;
+  border-radius: 2rem;
+  width: 80vw;
+  padding-bottom: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 5px 15px rgb(20, 20, 20);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: stretch;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* TÍTULO DO PRONTUÁRIO */
+.container_prontuario h2 {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(90deg, #3A8EF6, #6F3AFA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+/* FOTO DO PERFIL */
+.foto_perfil img {
+  width: 10rem;
+  height: 10rem;
+}
+
+.foto_perfil {
+  display: flex;
+}
+
+/* BOTÃO DE INICIAR CONSULTA */
+.botao_iniciar_consulta {
+  font-family: "Sora", sans-serif;
+  text-align: center;
+  border-radius: 50rem;
+  background-image: linear-gradient(to right, #3A8EF6, #6F3AFA);
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 15rem;
+  height: 3rem;
+  margin-bottom: 3.2rem;
+}
+
+.botao_iniciar_consulta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.iniciar_consulta {
+  width: 100%;
+  margin-left: 10em;
+  display: flex;
+}
+
+/* BARRA DE DADOS DO PACIENTE */
+.barra_de_dados {
+  background: linear-gradient(90deg, #3A8EF6, #6F3AFA);
+  width: 50rem;
+  height: 3.6rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.barra_de_dados p {
+  color: white;
+  font-family: "Sora", sans-serif;
+}
+
+.itens-prontuario {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5rem;
+}
+
+/* BARRA DE OPÇOES DE ESCOLHA DE TELA */
+.barra_opcoes {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.botao_opcoes {
+  background: linear-gradient(90deg, #3A8EF6, #6F3AFA);
+  border: solid 0.5px;
+  border-radius: 1rem;
+  width: 10.8rem;
+  height: 5rem;
+  font-family: "Sora", sans-serif;
+  color: white;
+  margin: 1rem;
+  margin-left: 5.6em;
+}
+
+.botao_opcoes:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.opcoes_descricao {
+  display: flex;
+  width: 100%;
+}
+
+.descricao {
+  border-radius: 1rem;
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+}
+
+.descricao textarea {
+  width: 49rem;
+  height: 19rem;
+  border-radius: 1rem;
+  background-color: #EEEEEE;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: "Sora", sans-serif;
+  color: gray;
+}
+
+/* PÁGINA DE LOGIN */
+#logo_pagina_login {
+  font-family: "Poppins", sans-serif;
+  font-weight: 550;
+  font-size: 2rem;
+  background: linear-gradient(50deg, #3A8EF6, #6F3AFA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.subtitulo_login {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 2.1rem;
+  background: linear-gradient(50deg, #3A8EF6, #6F3AFA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+#esqueceu_a_senha {
+  display: flex;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-family: "Sora", sans-serif;
+}
+
+#esqueceu_a_senha a {
+  background: linear-gradient(10deg, #3A8EF6, #6F3AFA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.botao_entrar {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  pointer-events: painted;
+}
+
+.entrar_criar {
+  background: linear-gradient(90deg, #3A8EF6, #6F3AFA);
+  border: none;
+  border-radius: 1rem;
+  width: 35rem;
+  height: 3rem;
+  margin-top: 1rem;
+  color: white;
+  font-family: "Sora", sans-serif;
+}
+
+.entrar_criar:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.entrar_criar a {
+  text-decoration: none;
+}
+
 /*PÁGINA DE ESPECIALIDADES - LISTA*/
 .icon {
   position: absolute;
@@ -660,18 +974,12 @@ h2 {
   font-family: "Sora", sans-serif;
   text-decoration: none;
 }
-
 .header__nav-item--selected {
   color: #3a8ef6;
   border-bottom: 3px solid #3a8ef6;
 }
 .header__nav-item:hover {
   color: #3a8ef6;
-}
-.header__nav:last-child {
-  color: rgb(177, 27, 32);
-  font-family: "Sora", sans-serif;
-  text-decoration: none;
 }
 .header__profile-container {
   border-radius: 3rem;
