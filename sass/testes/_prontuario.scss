@@ -1,0 +1,70 @@
+// .prontuario {
+//   &__grid {
+//     display: grid;
+//     grid-template-areas:
+//       "imagem iniciar . ."
+//       "imagem head head head"
+//       "exames field field field"
+//       "atestado field field field"
+//       "atestado field field field";
+//     min-height: 80rem;
+//     &-imagem {
+//       grid-area: imagem;
+//       background-color: aqua;
+//     }
+//     &-head {
+//       grid-area: head;
+//       background-color: rgb(30, 255, 0);
+//     }
+//     &-exames {
+//       grid-area: exames;
+//       background-color: rgb(255, 0, 230);
+//     }
+//     &-field {
+//       grid-area: field;
+//       background-color: rgb(255, 94, 0);
+//     }
+//     &-atestado {
+//       grid-area: atestado;
+//       background-color: rgb(255, 0, 0);
+//     }
+//   }
+// }
+
+// .prontuario {
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 70%;
+//   min-width: 100%;
+//   &__superior {
+//     display: flex;
+//     min-height: 30%;
+//     min-width: 100%;
+//     background-color: blanchedalmond;
+//   }
+//   &__inferior {
+//     display: flex;
+//     min-height: 60%;
+//     min-width: 100%;
+//     background-color: brown;
+//   }
+//   &__image {
+//     flex-grow: 1;
+//   }
+//   &__cabecalho {
+//     flex-grow: 9;
+//   }
+//   &__iniciar {    
+//   }
+//   &__info {    
+//   }
+//   &__nav-container{
+
+//   }
+//   &__nav-item{
+    
+//   }
+//   &__observacoes{
+    
+//   }
+// }
