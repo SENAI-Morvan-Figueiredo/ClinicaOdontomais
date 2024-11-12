@@ -995,10 +995,14 @@ h2 {
   position: absolute;
   top: 100%;
   left: 0;
+  width: 25rem;
   margin-top: 2rem;
   font-size: 1.6rem;
   display: block;
   visibility: hidden;
+  background-color: #fffdfc;
+  padding: 1rem;
+  border-radius: 0.3rem;
   transition: opacity 0.1s ease, visibility 0.1s ease;
 }
 .header__submenu a {

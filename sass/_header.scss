@@ -52,11 +52,15 @@
   &__submenu {
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 0;    
+    width: 25rem;
     margin-top: 2rem;
     font-size: $font-size--normal;
     display: block;
     visibility: hidden ;
+    background-color: $color-ice-white;
+    padding: 1rem;
+    border-radius: 0.3rem;
     transition: opacity 0.1s ease, visibility 0.1s ease;
     & a {
       display: block;
