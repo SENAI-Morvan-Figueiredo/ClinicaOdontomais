@@ -6,20 +6,32 @@
     <title>Odonto +</title>
     <link href="../css/estilo.css" rel="stylesheet" />
   </head>
-  <body class="consultas-agendadas__container">
-    <header class="">
-      <a class="logo" href="#">Odonto+</a>
-      <nav>
-        <a class="navbar" href="">Dashboard</a>
-        <a class="navbar" href="">Dashboard</a>
-        <a class="navbar" href="">Dashboard</a>
-        <a class="navbar" href="">Dashboard</a>
+  <body class="">
+    <header class="header">
+      <a class="header__logo" href="#">Odonto+</a>
+      <nav class="header__nav">
+        <a class=" header__nav-item" href="../index.html">Home</a>
+        <a class="header__nav-item" href="">Clínicas</a>
+        <a class="header__nav-item" href="">Tratamentos</a>
+        <a class="header__nav-item" href="">Agendamento</a>
+        <div class="header__nav-item header__nav-item--selected">Admin  <i class="fa-solid fa-caret-down"></i>
+          <ul class="header__submenu">
+            <li><a href="../especialidades/especialidades.html">Especialidades</a></li>
+            <li><a href="../perfis/perfis.html">Perfis</a></li>
+            <li><a href="../agendas/agendar.html">Agenda</a></li>
+            <li><a href="../cadastros/pacientes.html">Pacientes</a></li>
+            <li><a href="../consultas/consultas_agendadas.html">Consultas Agendadas</a></li>
+            <li><a href="../prontuarios/prontuario.html">Prontuários</a></li>
+            <li><a href="../cadastros/cadastro_pacientes.html">Cadastros - Paciente</a></li>
+            <li><a href="../cadastros/cadastrofuncionario.html">Cadastros - Funcionário</a></li>
+          </ul>
+        </div>
       </nav>
-      <div id="perfil">
-        <img src="../imagens/iconeperfil.png" alt="imagem pessoal" />
-        <div id="nome">
-          <h5>Gustavo Santos</h5>
-          <h6>Administrador</h6>
+      <div class="header__profile-container">
+        <img class="header__profile-img" src="../img/avatar.jpg" alt="imagem pessoal" />
+        <div class="header__profile-name-container">
+          <span class="header__profile-name">Gustavo Santos</span>
+          <span class="header__profile-name-role">Administrador</span>
         </div>
       </div>
     </header>
