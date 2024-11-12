@@ -3,29 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Perfis</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    <title>Odonto +</title>
     <link href="../css/estilo.css" rel="stylesheet" />
   </head>
   <body class="">
     <header class="header">
       <a class="header__logo" href="#">Odonto+</a>
       <nav class="header__nav">
-        <a class="header__nav-item header__nav-item--selected" href="">Home</a>
+        <a class=" header__nav-item" href="../index.html">Home</a>
         <a class="header__nav-item" href="">Clínicas</a>
         <a class="header__nav-item" href="">Tratamentos</a>
         <a class="header__nav-item" href="">Agendamento</a>
-        <a class="header__nav-item" href="">Admin<span> *</span></a>
+        <div class="header__nav-item header__nav-item--selected">Admin  <i class="fa-solid fa-caret-down"></i>
+          <ul class="header__submenu">
+            <li><a href="../especialidades/especialidades.html">Especialidades</a></li>
+            <li><a href="../perfis/perfis.html">Perfis</a></li>
+            <li><a href="../agendas/agendar.html">Agenda</a></li>
+            <li><a href="../cadastros/pacientes.html">Pacientes</a></li>
+            <li><a href="../consultas/consultas_agendadas.html">Consultas Agendadas</a></li>
+            <li><a href="../prontuarios/prontuario.html">Prontuários</a></li>
+            <li><a href="../cadastros/cadastro_pacientes.html">Cadastros - Paciente</a></li>
+            <li><a href="../cadastros/cadastrofuncionario.html">Cadastros - Funcionário</a></li>
+          </ul>
+        </div>
       </nav>
       <div class="header__profile-container">
-        <img
-          class="header__profile-img"
-          src="./img/avatar.jpg"
-          alt="imagem pessoal"
-        />
+        <img class="header__profile-img" src="../img/avatar.jpg" alt="imagem pessoal" />
         <div class="header__profile-name-container">
           <span class="header__profile-name">Gustavo Santos</span>
           <span class="header__profile-name-role">Administrador</span>
@@ -43,14 +46,14 @@
         </div>
         <div class="grid-list grid-list--item">
           <label>Recepcionista</label>
-          <a href="__editar_perfil_d.html"
+          <a href="editar_perfil_d.html"
             ><i class="fas fa-pencil-alt u-big-white-icon--editable"></i
           ></a>
         </div>
 
         <div class="grid-list grid-list--item">
           <label>Médico</label>
-          <a href="__editarperfil.html"
+          <a href=""
             ><i class="fas fa-pencil-alt u-big-white-icon--editable"></i
           ></a>
         </div>
