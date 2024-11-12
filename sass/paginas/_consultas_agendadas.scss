@@ -10,14 +10,14 @@ input::placeholder{
 .ca__container_usuario{
     display: flex;
     align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .ca__button{
     display: flex;
     justify-content: center;
 }
-
-
 
 .ca__conteudo{
     background-color: #FFFDFC;
@@ -53,8 +53,21 @@ input::placeholder{
 }
 
 img{
-    border-radius: 50%;
-      width: 30rem;
+    border-radius: 75%;
+      width: 25rem;
       margin-left: -9rem;
 }
 
+.subtitulo{
+    font-size: 2rem;
+    word-spacing: 2rem;
+    font-weight: 900;
+    background: linear-gradient(to right, #3a8ef6, #6f3afa);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0 auto 2rem auto;
+    font-family: "Poppins", sans-serif;
+
+    display: flex;
+    justify-content: center;
+}
