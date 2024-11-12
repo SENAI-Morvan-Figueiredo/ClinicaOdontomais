@@ -1,3 +1,4 @@
+
 //CORES
 $primary-color--light: #3a8ef6;
 $primary-color--dark: #6f3afa;
@@ -8,20 +9,30 @@ $color-gray: grey;
 $color-ice-white: #fffdfc;
 
 
-//FONTES
+//TAMANHOS DE FONTES
 $font-size--smallest: 0.7rem;
 $font-size--small: 1rem;
 $font-size--normal: 1.6rem;
 $font-size--big: 2rem;
-$font-size--biggest: 2.5rem;
+$font-size--biggest: 2.5rem; 
 
 
+//TAMANHOS DE DIVS
+$grid-list-size--normal:40%;
 
 
-//MIXINS
+// MIXINS
 @mixin color-gradiant{ 
   background-color: linear-gradient(
   to right,
   $primary-color--light,
   $primary-color--dark
 )};
+
+@mixin hover-light{
+    background: linear-gradient(
+      to right bottom,
+      lighten($primary-color--light, 5%),
+      lighten($primary-color--dark, 5%)
+    );
+}
