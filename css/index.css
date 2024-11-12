@@ -47,7 +47,7 @@ nav button {
 .part-1 {
     width: auto;
     height: 550px;
-    background-image: url(/img/cadeira1.png);
+    background-image: url(../img/cadeira1.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
