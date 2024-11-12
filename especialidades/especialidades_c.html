@@ -14,11 +14,17 @@
     <header class="header">
       <a class="header__logo" href="#">Odonto+</a>
       <nav class="header__nav">
-        <a class=" header__nav-item header__nav-item--selected" href="">Home</a>
+        <a class=" header__nav-item" href="../index.html">Home</a>
         <a class="header__nav-item" href="">Clínicas</a>
         <a class="header__nav-item" href="">Tratamentos</a>
         <a class="header__nav-item" href="">Agendamento</a>
-        <a class="header__nav-item" href="">Admin<span> *</span></a>
+        <div class="header__nav-item header__nav-item--selected">Admin  <i class="fa-solid fa-caret-down"></i>
+          <ul class="header__submenu">
+            <li><a href="">Especialidades</a></li>
+            <li><a href="">Perfis</a></li>
+            <li><a href="">Agenda</a></li>
+          </ul>
+        </div>
       </nav>
       <div class="header__profile-container">
         <img class="header__profile-img" src="../img/avatar.jpg" alt="imagem pessoal" />
@@ -38,44 +44,55 @@
               <input required type="text" placeholder="Digite o nome do perfil" class="input input-icone input--invalid">
             </div>
           </div>
-          <div class="input-group">
-            <input
-              type="text"
-              placeholder="Digite o nome do perfil"
-              class="input input-icone"
-              value="Ortodontia"
-            />
-            <a href="especialidades.html"><i class="fas fa-save icon"></i></a>
+          <div class="grid-list grid-list--item">
+            <label>Ortodontia Pediátrica</label>
+            <div class="u-icon-gap--small">
+              <a href="especialidades_e.html"><i class="fas fa-pencil-alt u-big-white-icon--editable"></i></a>
+              <a><i class="fas fa-trash-alt u-big-white-icon--editable"></i></a>
+            </div>   
           </div>
   
           <div class="grid-list grid-list--item">
-            <label>Periodontia</label>
-            <a href="__editarperfil.html"
-              ><i class="fas fa-pencil-alt u-big-white-icon--editable"></i
-            ></a>
+            <label>Periodontia</label>            
+              <div class="u-icon-gap--small">
+                <a href=""><i class="fas fa-pencil-alt u-big-white-icon--editable"></i></a>
+                <a><i class="fas fa-trash-alt u-big-white-icon--editable"></i></a>
+              </div>            
           </div>
           <div class="grid-list grid-list--item">
             <label>Endodontia</label>
-            <i class="fas fa-pencil-alt u-big-white-icon--editable"></i>
+            <div class="u-icon-gap--small">
+              <a href=""><i class="fas fa-pencil-alt u-big-white-icon--editable"></i></a>
+              <a><i class="fas fa-trash-alt u-big-white-icon--editable"></i></a>
+            </div>    
           </div>
           <div class="grid-list grid-list--item">
             <label>Cirurgia Bucomaxilofacial</label>
-            <i class="fas fa-pencil-alt u-big-white-icon--editable"></i>
+            <div class="u-icon-gap--small">
+              <a href=""><i class="fas fa-pencil-alt u-big-white-icon--editable"></i></a>
+              <a><i class="fas fa-trash-alt u-big-white-icon--editable"></i></a>
+            </div>   
           </div>
           <div class="grid-list grid-list--item">
             <label>Próteses Dentárias</label>
-            <i class="fas fa-pencil-alt u-big-white-icon--editable"></i>
+            <div class="u-icon-gap--small">
+              <a href=""><i class="fas fa-pencil-alt u-big-white-icon--editable"></i></a>
+              <a><i class="fas fa-trash-alt u-big-white-icon--editable"></i></a>
+            </div>   
           </div>
           <div class="grid-list grid-list--item">
             <label>Implantodontia</label>
-            <i class="fas fa-pencil-alt u-big-white-icon--editable"></i>
+            <div class="u-icon-gap--small">
+              <a href=""><i class="fas fa-pencil-alt u-big-white-icon--editable"></i></a>
+              <a><i class="fas fa-trash-alt u-big-white-icon--editable"></i></a>
+            </div>   
           </div>
           <div class="input-group input-fake">
             <label>Médico</label>
             <i class="fas fa-pencil-alt icon icon-light"></i>
           </div>
           <div class="perfil__rodape-container">
-            <a class="btn btn--big" href="especialidades.html">Criar Especlialidade</a>
+            <a class="btn btn--big" href="especialidades_n.html">Criar Especialidade</a>
           </div>          
         </div>
       </div>
