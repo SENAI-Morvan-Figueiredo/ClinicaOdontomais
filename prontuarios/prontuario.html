@@ -1,67 +1,68 @@
 <!DOCTYPE html>
-<html lang="PT">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilo.css">
-    <title>Prontuário</title>
-
-</head>
-
-<body>
-
-    <header>
-        <div id="logo">
-            <a href="index.html">Odonto+</a>
-        </div>
-        <nav>
-            <a class="navbar" href="">Agenda</a>
-            <a class="navbar" href="/agendar.html">Nova consulta</a>
-            <a class="navbar" href="/prontuario.html">Prontuário</a>
-            <a class="navbar" href="">Novo cadastro</a>
-        </nav>
-        <div id="perfil">
-            <img src="../img/avatar.jpg" alt="imagem pessoal">
-            <div id="nome">
-                <h5>Gustavo Santos</h5>
-                <h6>Administrador</h6>
-            </div>
-        </div>
-    </header>
-
-
-
-    <div class="container_prontuario">
-        <h2>Prontuário odontológico</h2>
-        <div class="iniciar_consulta">
-            <div class="foto_perfil">
-                <img src="../img/avatar.jpg" alt="Foto do perfil">
-                <div class="itens-prontuario">
-                    <button class="botao_iniciar_consulta"> Iniciar consulta</button>
-                    <div class="barra_de_dados">
-                        <p>Gustavo Santos</p>
-                        <p>12/12/2024</p>
-                        <p>444.444.444-44</p>
-                    </div>
+ <html lang="pt-BR">
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Odonto +</title>
+     <link href="../css/estilo.css" rel="stylesheet" />
+   </head>
+   <body class="">
+     <header class="header">
+       <a class="header__logo" href="#">Odonto+</a>
+       <nav class="header__nav">
+         <a class=" header__nav-item" href="../index.html">Home</a>
+         <a class="header__nav-item" href="">Clínicas</a>
+         <a class="header__nav-item" href="">Tratamentos</a>
+         <a class="header__nav-item" href="">Agendamento</a>
+         <div class="header__nav-item header__nav-item--selected">Admin  <i class="fa-solid fa-caret-down"></i>
+           <ul class="header__submenu">
+             <li><a href="../especialidades/especialidades.html">Especialidades</a></li>
+             <li><a href="../perfis/perfis.html">Perfis</a></li>
+             <li><a href="../agendas/agendar.html">Agenda</a></li>
+             <li><a href="../cadastros/pacientes.html">Pacientes</a></li>
+             <li><a href="../consultas/consultas_agendadas.html">Consultas Agendadas</a></li>
+             <li><a href="../prontuarios/prontuario.html">Prontuários</a></li>
+             <li><a href="../cadastros/cadastro_pacientes.html">Cadastros - Paciente</a></li>
+             <li><a href="../cadastros/cadastrofuncionario.html">Cadastros - Funcionário</a></li>
+           </ul>
+         </div>
+       </nav>
+       <div class="header__profile-container">
+         <img class="header__profile-img" src="../img/avatar.jpg" alt="imagem pessoal" />
+         <div class="header__profile-name-container">
+           <span class="header__profile-name">Gustavo Santos</span>
+           <span class="header__profile-name-role">Administrador</span>
+         </div>
+       </div>
+     </header>
+     <div class="container__frame u-flex-column">
+       <h2 class="titulo__frame u-flex-self-center">Pacientes</h2>
+       <div class="iniciar_consulta">
+        <div class="foto_perfil">
+            <img src="../img/avatar.jpg" alt="Foto do perfil">
+            <div class="itens-prontuario">
+                <button class="botao_iniciar_consulta"> Iniciar consulta</button>
+                <div class="barra_de_dados">
+                    <p>Gustavo Santos</p>
+                    <p>12/12/2024</p>
+                    <p>444.444.444-44</p>
                 </div>
             </div>
         </div>
-
-
-
-        <div class="opcoes_descricao">
-            <div class="barra_opcoes">
-                <button class="botao_opcoes">Exames</button>
-                <button class="botao_opcoes">Atestados</button>
-                <button class="botao_opcoes">Agendamentos</button>
-            </div>
-            <div class="descricao">
-                <textarea name="descricao_consulta" placeholder="Descrição da consulta:">
-            </div>
-        </div>
     </div>
-</body>
 
-</html>
 
+<!-- 
+    DESCRIÇÃO -->
+    <div class="opcoes_descricao">
+        <div class="barra_opcoes">
+            <button class="botao_opcoes">Exames</button>
+            <button class="botao_opcoes">Atestados</button>
+            <button class="botao_opcoes">Agendamentos</button>
+        </div>
+        <div class="descricao">
+            <textarea name="descricao_consulta" placeholder="Descrição da consulta:">
+        </div>
+     </div>
+   </body>
+ </html>
