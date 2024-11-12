@@ -972,6 +972,8 @@ h2 {
   gap: 3rem;
 }
 .header__nav-item {
+  position: relative;
+  cursor: pointer;
   color: grey;
   font-family: "Sora", sans-serif;
   text-decoration: none;
@@ -982,6 +984,32 @@ h2 {
 }
 .header__nav-item:hover {
   color: #3a8ef6;
+}
+.header__nav-item:hover .header__submenu {
+  visibility: visible;
+}
+.header__nav-item:hover .header__submenu a {
+  display: block;
+}
+.header__submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  display: block;
+  visibility: hidden;
+  transition: opacity 0.1s ease, visibility 0.1s ease;
+}
+.header__submenu a {
+  display: block;
+  color: grey;
+  text-decoration: none;
+  padding: 0.5rem 1.1rem;
+  cursor: pointer;
+}
+.header__submenu:hover {
+  display: block;
 }
 .header__profile-container {
   border-radius: 3rem;
